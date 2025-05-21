@@ -5,53 +5,533 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--==================== UNICONS ====================-->
-        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
+        <title>Azharuddin Malik Portfolio</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+          <nav class="nav container">
+            <a href="#home" class="nav__logo">Azhar</a>
+
+            <div class="nav__menu" id="nav-menu">
+              <button id="nav-close" class="nav__close">×</button>
+              <ul class="nav__list">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+              </ul>
+            </div>
+
+            <button id="nav-toggle" class="nav__toggle">☰</button>
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+          </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                 <div class="home__container container">
+
+                    <div class="home__content">
+
+                        <!-- SOCIALS on the far left -->
+                        <div class="home__social">
+                            <a href="https://linkedin.com/in/azharuddin-malik" class="home__social-link"><i class="uil uil-linkedin-alt"></i></a>
+                            <a href="https://github.com/AzharuddinMalik" class="home__social-link"><i class="uil uil-github-alt"></i></a>
+                            <a href="mailto:therockstar6237@gmail.com" class="home__social-link"><i class="uil uil-envelope"></i></a>
+                          </div>
+
+                        <!-- MIDDLE Text CONTENT -->
+                        <div class="home__data">
+                            <h1 class="home__title">
+                              <span>Hi, I'm</span>
+                              Azharuddin Malik
+                            </h1>
+                            <h3 class="home__subtitle">Frontend Developer</h3>
+                            <p class="home__description">
+                              High level experience in web design and development knowledge, producing quality work.
+                            </p>
+
+                            <div class="home__buttons" STYLE="PADDING-TOP:1REM;">
+                                  <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-message button__icon"></i>
+                                  </a>
+                                  <a href="#about" class="home__scroll">
+                                      <i class="uil uil-mouse-alt"></i>
+                                      <span class="home__scroll-text">Scroll down</span>
+                                      <i class="uil uil-arrow-down"></i>
+                                  </a>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT Image with Blob -->
+                        <div class="home__right">
+                        <div class="home__blob">
+                          <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="var(--first-color)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                          </svg>
+                        </div>
+                        <img src="assets/img/Profile.png"  alt="Azhar" class="home__img">
+                        </div>
+                    </div>
+                 </div>
             </section>
+
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                
+              <div class="section__container container grid-3">
+
+                <!-- LEFT COLUMN: Profile Photo -->
+                <div class="about__photo-wrapper">
+                  <img src="assets/img/about.jpg" alt="Azharuddin Malik" class="about__photo" />
+                </div>
+
+                <!-- MIDDLE COLUMN: Text, CV Button & Stats -->
+                <div class="about__content">
+                  <h2 class="section__title">About Me</h2>
+                    <span class="section__subtitle" style="display: contents;
+                        text-align: center;
+                        ">My Introduction</span>
+                  <p class="about__description">
+                    Hi! I’m Azharuddin Malik, a passionate Computer Science student at Chandigarh University (CGPA: 7.37). My technical arsenal includes Java, Python, JavaScript, and frameworks like Spring Boot & Angular. I also work with modern tools such as Android Studio and GitHub. Let’s build innovative software together!
+                  </p>
+                  <a href="assets/pdf/Resume_Azharuddin_Final.pdf" download class="button about__cv">
+                    Download CV <i class="uil uil-download-alt"></i>
+                  </a>
+
+                  <div class="about__stats grid-3">
+                    <div class="about__box">
+                      <h3 class="about__number">0</h3>
+                      <p class="about__label">Years<br/>Experience</p>
+                    </div>
+                    <div class="about__box">
+                      <h3 class="about__number">7</h3>
+                      <p class="about__label">Completed<br/>Projects</p>
+                    </div>
+                    <div class="about__box">
+                      <h3 class="about__number">4</h3>
+                      <p class="about__label">Research<br/>Papers</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Back‑to‑Top Button -->
+                <div class="about__backtop">
+                  <a href="#home" class="about__up-button">
+                    <i class="uil uil-arrow-up"></i>
+                    Back to Top
+                  </a>
+                </div>
+
+              </div>
             </section>
+
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Technical & Functional Expertise</span>
 
+                <div class="skills__container container grid">
+                    <!-- Frontend Skills -->
+                    <div class="skills__content">
+                        <div class="skills__header" onclick="toggleAccordion(this)">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h3 class="skills__title">Frontend Development</h3>
+                                <span class="skills__subtitle">2+ years experience</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tailwind</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__tailwind"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__angular"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skills__content">
+                        <div class="skills__header" onclick="toggleAccordion(this)">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            <div>
+                                <h3 class="skills__title">Backend & Databases</h3>
+                                <span class="skills__subtitle">1+ years experience</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Spring Boot</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__spring"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Node.js</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__node"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL Databases</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">NoSQL</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__nosql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mongodb"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Functional Skills -->
+                    <div class="skills__content">
+                        <div class="skills__header" onclick="toggleAccordion(this)">
+                            <i class="uil uil-chart-bar skills__icon"></i>
+                            <div>
+                                <h3 class="skills__title">Functional Skills</h3>
+                                <span class="skills__subtitle">Core Competencies</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Analysis</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__analysis"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Visualization</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__viz"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">ETL Processes</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__etl"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Data Modeling</h3>
+                                        <span class="skills__number">78%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__modeling"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
 
-            </section>
+            <!--==================== QUALIFICATIONS SECTION ====================-->
+            <section class="qualification section" id="qualification">
+  <h2 class="section__title">Qualifications</h2>
+
+  <!-- Tabs -->
+  <div class="qualification__tabs" role="tablist">
+    <button class="qualification__tab active" role="tab" aria-selected="true" data-tab="education">
+      <i class="uil uil-graduation-cap"></i> Education
+    </button>
+    <button class="qualification__tab" role="tab" aria-selected="false" data-tab="certifications">
+      <i class="uil uil-award"></i> Certifications
+    </button>
+  </div>
+
+  <!-- Education Timeline -->
+  <div class="qualification__panel" id="education" role="tabpanel">
+    <!-- Most Recent First -->
+    <article class="qualification__card" tabindex="0">
+      <div class="qualification__marker" aria-hidden="true"></div>
+      <div class="qualification__details">
+        <h3>B.E. Computer Science</h3>
+        <span class="qualification__subtitle">Chandigarh University</span>
+        <time class="qualification__date">2021 – 2025</time>
+        <div class="qualification__meta">
+          <span class="qualification__label">CGPA:</span>
+          <div class="qualification__progress">
+            <div class="qualification__bar">
+              <div class="qualification__fill" style="width:73.7%"></div>
+            </div>
+            <span class="qualification__percent">7.37</span>
+          </div>
+        </div>
+        <p class="qualification__text">
+          Courses: Data Structures, Java, Spring Boot<br>
+          Achievements: 4 research papers published
+        </p>
+      </div>
+    </article>
+
+    <article class="qualification__card" tabindex="0">
+      <div class="qualification__marker" aria-hidden="true"></div>
+      <div class="qualification__details">
+        <h3>Higher Secondary</h3>
+        <span class="qualification__subtitle">Andhra Education Society</span>
+        <time class="qualification__date">2019 – 2021</time>
+        <div class="qualification__meta">
+          <span class="qualification__label">Score:</span>
+          <div class="qualification__progress">
+            <div class="qualification__bar">
+              <div class="qualification__fill" style="width:77.8%"></div>
+            </div>
+            <span class="qualification__percent">77.8%</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Certifications Timeline -->
+  <div class="qualification__panel hidden" id="certifications" role="tabpanel">
+    <article class="qualification__card" tabindex="0">
+      <div class="qualification__marker" aria-hidden="true"></div>
+      <div class="qualification__details">
+        <h3>Google Cloud Training</h3>
+        <span class="qualification__subtitle">Coursera</span>
+        <time class="qualification__date">2023</time>
+        <p class="qualification__text">
+          Hands‑on cloud computing, VMs & container deployment.
+        </p>
+      </div>
+    </article>
+
+    <article class="qualification__card" tabindex="0">
+      <div class="qualification__marker" aria-hidden="true"></div>
+      <div class="qualification__details">
+        <h3>Python for Everybody</h3>
+        <span class="qualification__subtitle">University of Michigan</span>
+        <time class="qualification__date">2022</time>
+        <p class="qualification__text">
+          Python basics, data structures, APIs, web scraping.
+        </p>
+      </div>
+    </article>
+
+    <article class="qualification__card" tabindex="0">
+      <div class="qualification__marker" aria-hidden="true"></div>
+      <div class="qualification__details">
+        <h3>Frontend Development</h3>
+        <span class="qualification__subtitle">Meta / LinkedIn Learning</span>
+        <time class="qualification__date">2024</time>
+        <p class="qualification__text">
+          HTML5, CSS3, JS, responsive design, Git & GitHub.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+
             </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+
+            <!--==================== PORTFOLIO SECTION ====================-->
+            <!-- Portfolio Section with Carousel/Slider -->
+<!-- Portfolio Section with Clean Minimal Design -->
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <h2 class="section__title">My Projects</h2>
+    <span class="section__subtitle">Recent work</span>
+
+    <!-- Swiper Container -->
+    <div class="portfolio__container">
+      <div class="swiper portfolio__swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide portfolio__slide">
+            <div class="portfolio__item">
+              <div class="portfolio__img">
+                <img src="assets/img/portfolio1.jpg" alt="Urban Planning Project">
+              </div>
+              <div class="portfolio__content">
+                <h3 class="portfolio__title">Urban Planning App</h3>
+                <p class="portfolio__description">
+                  A dynamic mapping tool built with Leaflet.js and React that visualizes zoning and infrastructure data for city planners.
+                </p>
+                <a href="https://github.com/AzharuddinMalik/semantic-segmentation-of-aerial-imagery-for-urban-planning" target="_blank" class="portfolio__button">
+                  View on GitHub <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide portfolio__slide">
+            <div class="portfolio__item">
+              <div class="portfolio__img">
+                <img src="assets/img/portfolio2.jpg" alt="WeatherSnap Project">
+              </div>
+              <div class="portfolio__content">
+                <h3 class="portfolio__title">WeatherSnap</h3>
+                <p class="portfolio__description">
+                  A real‑time weather dashboard using OpenWeatherMap API, Vue.js on the frontend, and Node.js/Express on the backend.
+                </p>
+                <a href="https://github.com/AzharuddinMalik/WeatherSnap" target="_blank" class="portfolio__button">
+                  View on GitHub <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide portfolio__slide">
+            <div class="portfolio__item">
+              <div class="portfolio__img">
+                <img src="assets/img/portfolio3.jpg" alt="XURL Project">
+              </div>
+              <div class="portfolio__content">
+                <h3 class="portfolio__title">XURL</h3>
+                <p class="portfolio__description">
+                  XURL is a high-performance URL shortening library written in Java that transforms long, unwieldy URLs into concise, shareable links while maintaining a 1:1 mapping and tracking usage analytics.
+                </p>
+                <a href="https://github.com/AzharuddinMalik/URLShort" target="_blank" class="portfolio__button">
+                  View on GitHub <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows - Simplified -->
+      <div class="portfolio__navigation">
+        <div class="portfolio__arrow portfolio__arrow--prev">
+          <i class="uil uil-angle-left-b"></i>
+        </div>
+        <div class="portfolio__pagination"></div>
+        <div class="portfolio__arrow portfolio__arrow--next">
+          <i class="uil uil-angle-right-b"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
@@ -60,27 +540,156 @@
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
-                
+
             </section>
 
             <!--==================== CONTACT ME ====================-->
+            <!-- Contact Section with Theme-Based Design -->
             <section class="contact section" id="contact">
+    <div class="container">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch! I'm always open to discussing new projects, creative ideas, or opportunities.</span>
 
-            </section>
+        <div class="contact__container grid">
+            <!-- Left Column: Contact Information -->
+            <div class="contact__information">
+                <!-- Location Card -->
+                <div class="contact__card">
+                    <i class="uil uil-map-marker contact__icon"></i>
+                    <h3 class="contact__card-title">Location</h3>
+                    <span class="contact__card-data">Mohali, Punjab</span>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact__card">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <a href="mailto:therockstar6237@gmail.com" class="contact__link">therockstar@gmail.com</a>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="contact__card">
+                    <i class="uil uil-linkedin-alt contact__icon"></i>
+                    <h3 class="contact__card-title">LinkedIn</h3>
+                    <a href="https://linkedin.com/in/azharuddin-malik" target="_blank" class="contact__link">Azharuddin Malik</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <form action="https://formspree.io/f/mblowogr" method="POST" class="contact__form grid" id="contact-form">
+                <!-- Name Field -->
+                <div class="contact__form-div">
+                    <label for="name" class="contact__form-tag">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Insert your name" class="contact__form-input" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="contact__form-div">
+                    <label for="email" class="contact__form-tag">Mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insert your email" class="contact__form-input" required>
+                </div>
+
+                <!-- Message Field -->
+                <div class="contact__form-div contact__form-area">
+                    <label for="message" class="contact__form-tag">Message</label>
+                    <textarea name="message" id="message" placeholder="Write your message" class="contact__form-input" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button button--flex contact__button">
+                    Send Message
+                    <i class="uil uil-message button__icon"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section" id="footer">
+          <div class="footer__container container grid">
 
+            <!-- Branding -->
+            <div class="footer__brand">
+              <h3 class="footer__logo">Azhar</h3>
+              <p class="footer__description">
+                Passionate frontend developer building modern, user-focused web experiences. Let's connect!
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__links">
+              <h4 class="footer__title">Quick Links</h4>
+              <ul class="footer__list">
+                <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer__socials">
+              <h4 class="footer__title">Follow Me</h4>
+              <div class="footer__social-icons">
+                <a href="https://linkedin.com/in/azharuddin-malik" class="footer__social-link" aria-label="LinkedIn">
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://github.com/AzharuddinMalik" class="footer__social-link" aria-label="GitHub">
+                  <i class="uil uil-github-alt"></i>
+                </a>
+                <a href="mailto:therockstar6237@gmail.com" class="footer__social-link" aria-label="Email">
+                  <i class="uil uil-envelope"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Newsletter / Contact CTA -->
+            <div class="footer__cta">
+              <h4 class="footer__title">Let’s Collaborate</h4>
+              <p>Interested in working together? Reach out anytime.</p>
+              <a href="#contact" class="button footer__button">Say Hello</a>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="footer__divider"></div>
+
+          <!-- Bottom -->
+          <div class="footer__bottom container">
+            <span class="footer__copy">© 2025 Azhar. All rights reserved.</span>
+            <a href="#home" class="footer__top" aria-label="Back to Top">
+              <i class="uil uil-arrow-up"></i>
+            </a>
+          </div>
+        </footer>
+
+
+        <!--==================== SCROLL TOP ====================-->
+        <!--Skill's Drop Down Menu javascript-->
+        <script>
+            function toggleAccordion(clickedHeader) {
+                const allContents = document.querySelectorAll('.skills__content');
+                const clickedContent = clickedHeader.parentElement;
+
+                allContents.forEach(content => {
+                    if (content !== clickedContent) {
+                        content.classList.remove('active');
+                        content.querySelector('.skills__arrow').classList.remove('uil-angle-up');
+                    }
+                });
+
+                clickedContent.classList.toggle('active');
+                const arrow = clickedHeader.querySelector('.skills__arrow');
+                arrow.classList.toggle('uil-angle-up');
+            }
+
+        </script>
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
