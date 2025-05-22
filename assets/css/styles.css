@@ -619,6 +619,7 @@ img {
   grid-template-columns: 1fr auto;  /* content + optional icon/button */
   grid-template-rows: auto auto auto 1fr auto;
   gap: 0.25rem 0.5rem;
+    align-items: center;
 }
 .qualification__details h3 {
   font-size: var(--h3-font-size);
