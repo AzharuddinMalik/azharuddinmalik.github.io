@@ -258,7 +258,7 @@ img {
 .nav__link {
   color: var(--text-color); font-weight: 500; text-decoration: none;
   transition: color .3s;
-    padding: 0 1rem;
+    padding: 10px 1rem;
 }
 .nav__link.active-link,
 .nav__link:hover { color: var(--first-color); }
