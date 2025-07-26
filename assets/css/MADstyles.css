@@ -1260,7 +1260,7 @@
         /* --- ANIMATIONS --- */
         @media (prefers-reduced-motion: no-preference) {
             .fade {
-                opacity: 0;
+                opacity: 1;
                 transform: translateY(20px);
                 transition: all .6s;
             }
